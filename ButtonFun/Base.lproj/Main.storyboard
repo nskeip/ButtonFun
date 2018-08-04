@@ -50,7 +50,9 @@
                             <constraint firstItem="Wgj-74-sne" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Spu-bv-apz"/>
                             <constraint firstItem="2MN-Al-kc8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XaL-GP-pch"/>
                             <constraint firstItem="Wgj-74-sne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fZr-UL-PhB"/>
+                            <constraint firstItem="idL-a4-gGp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="fgn-pd-Q3g"/>
                             <constraint firstItem="2MN-Al-kc8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="iWn-Ta-0zw"/>
+                            <constraint firstItem="Wgj-74-sne" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="20" symbolic="YES" id="udN-eQ-DaR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
