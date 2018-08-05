@@ -5,7 +5,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel?
     @IBAction func buttonPressed(_ sender: UIButton) {
         let title = sender.title(for: .selected)!
-        let text = "\(title) button pressed!"
+        let text = "\(title) pressed!"
         statusLabel!.text = text
     }
     
