@@ -41,11 +41,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94p-4q-NYV">
+                                <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhA-xy-hre">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="🐈 Button"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9m6-XI-R0y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUD-jB-nBQ">
+                                        <rect key="frame" x="0.0" y="30" width="320" height="30"/>
+                                        <state key="normal" title="🐕 Button"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hX-IG-saR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PhA-xy-hre" firstAttribute="width" secondItem="kUD-jB-nBQ" secondAttribute="width" id="9Dd-jK-Kv3"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="94p-4q-NYV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1W7-sa-JZs"/>
                             <constraint firstItem="idL-a4-gGp" firstAttribute="centerY" secondItem="Wgj-74-sne" secondAttribute="centerY" id="2Ia-Jd-ilO"/>
                             <constraint firstItem="2MN-Al-kc8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="2gY-eZ-R0j"/>
+                            <constraint firstItem="94p-4q-NYV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="GSm-Bw-ifq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="idL-a4-gGp" secondAttribute="trailing" constant="16" id="Rjm-E3-dF6"/>
                             <constraint firstItem="Wgj-74-sne" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Spu-bv-apz"/>
                             <constraint firstItem="2MN-Al-kc8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XaL-GP-pch"/>
@@ -53,6 +79,7 @@
                             <constraint firstItem="idL-a4-gGp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="fgn-pd-Q3g"/>
                             <constraint firstItem="2MN-Al-kc8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="iWn-Ta-0zw"/>
                             <constraint firstItem="Wgj-74-sne" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="20" symbolic="YES" id="udN-eQ-DaR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="94p-4q-NYV" secondAttribute="bottom" id="w4F-fe-3lo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -62,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="23.188405797101453" y="29.347826086956523"/>
+            <point key="canvasLocation" x="22.5" y="28.52112676056338"/>
         </scene>
     </scenes>
 </document>
